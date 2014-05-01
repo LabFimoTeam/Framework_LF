@@ -10,7 +10,7 @@
 
 /**  Variables Globales  **/
 
-
+require_once('constantes.php');
 
 /**************************/
 
