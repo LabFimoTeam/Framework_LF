@@ -1,7 +1,5 @@
 <?php
 
-require_once('../config.php');
- 
 abstract class DBAbstractModel { 
 	
  private static $db_host = 'localhost'; 
