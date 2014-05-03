@@ -35,7 +35,7 @@ class paths {
 	}
 
 	/**
-	 * Muestra los directorios de una ruta dada
+	 * Imprime los directorios de una ruta dada
 	 * @param ruta en donde buscar
 	 **/
 
@@ -73,6 +73,28 @@ class paths {
 				echo $archivo . "<br />";
 			}
 		}
+	}
+	
+	/**
+	 * Obtiene los archivos contenidos en una ruta
+	 */
+	function get_archivos_ruta($ruta) {
+		$directorio = opendir($ruta);
+		$archivo = readdir($directorio);
+		
+		$i=0;
+		$file[] = null;
+		
+		while ($archivo = readdir($directorio))
+		{
+			if (!is_dir($archivo) && !ereg("^[\.]$", $archivo))
+			{
+				$file[$i]=$archivo;
+			}
+			$i++;
+		}
+		
+		return $file;
 	}
 
 	/**

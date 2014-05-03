@@ -6,8 +6,14 @@
  *
 **/
 
-/* Path de configuracion **/
+/**
+ * Path de configuracion
+ */
 define('CONFIGPATH', realpath(__DIR__.'/config.php').DIRECTORY_SEPARATOR);
 
+/**
+ * Path de las librerias
+ */
+define('LIBPATH', realpath(__DIR__.'/../lib').DIRECTORY_SEPARATOR);
 
 ?>
