@@ -1,5 +1,7 @@
 <?php
 
+namespace Configuraciones;
+
 /*************** Base de datos ***********/
  $db_host = 'localhost';
  $db_user = 'usuario';
