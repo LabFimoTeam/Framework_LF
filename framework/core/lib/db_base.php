@@ -1,5 +1,8 @@
 <?php
 
+namespace Librerias;
+
+
 abstract class DBAbstractModel { 
 	
  private static $db_host = 'localhost'; 
