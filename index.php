@@ -19,9 +19,4 @@ print "<br/><pre>";
 //print_r ($d->leer_archivos('./framework/'));
 print "</pre>";
 
-
-class xdb extends Lib\DBAbstractModel{
-	
-}
-
 ?>
