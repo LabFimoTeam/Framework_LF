@@ -29,10 +29,12 @@ foreach ($concentrador->get_archivos_ruta(CONFIGPATH) as $k) {
 }
 
 /*************************** Directorios Vendor **********************************/
+
 /*
  * Twig
 */
 
 require_once (VENDORPATH."Twig/Autoloader.php");
  
+/*********************************************************************************/
 ?>

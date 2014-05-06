@@ -19,19 +19,21 @@ define('CONFIGFILE', realpath(__DIR__.'/config.php').DIRECTORY_SEPARATOR);
 /**
 * Path de configuracion
 */
-define('CONFIGPATH', realpath(__DIR__.'/').DIRECTORY_SEPARATOR);
+define('CONFIGPATH', realpath(__DIR__).DIRECTORY_SEPARATOR);
 
 /**
  * Path de las librerias
  */
 define('LIBPATH', realpath(__DIR__.'/../lib').DIRECTORY_SEPARATOR);
 
-/**
- * Path de las librerias de terceros (vendor)
- */
-define('VENDORPATH', realpath(__DIR__.'/../vendor/').DIRECTORY_SEPARATOR);
-
 /*********************************************************************************/
 
+/************************* Librerias de Terceros (VENDOR) ************************/
 
+/**
+ * Twig
+ */
+define('VENDORPATH', realpath(__DIR__.'/../vendor').DIRECTORY_SEPARATOR);
+
+/*********************************************************************************/
 ?>
