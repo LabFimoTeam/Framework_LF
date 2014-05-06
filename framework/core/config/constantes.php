@@ -27,9 +27,9 @@ define('CONFIGPATH', realpath(__DIR__.'/').DIRECTORY_SEPARATOR);
 define('LIBPATH', realpath(__DIR__.'/../lib').DIRECTORY_SEPARATOR);
 
 /**
- * Path de las librerias
+ * Path de las librerias de terceros (vendor)
  */
-define('', realpath(__DIR__.'/../lib').DIRECTORY_SEPARATOR);
+define('VENDORPATH', realpath(__DIR__.'/../vendor/').DIRECTORY_SEPARATOR);
 
 /*********************************************************************************/
 

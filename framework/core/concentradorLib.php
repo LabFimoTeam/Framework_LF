@@ -27,4 +27,12 @@ foreach (($concentrador->get_archivos_extencion(LIBPATH,"php")) as $k) {
 foreach ($concentrador->get_archivos_ruta(CONFIGPATH) as $k) {
 	require_once CONFIGPATH . "" . $k;
 }
+
+/*************************** Directorios Vendor **********************************/
+/*
+ * Twig
+*/
+
+require_once (VENDORPATH."Twig/Autoloader.php");
+ 
 ?>
