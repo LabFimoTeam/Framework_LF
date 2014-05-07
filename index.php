@@ -22,7 +22,7 @@ print "</pre>";
 
 print "<br/>";
 
-print Config\APPATH;
+print \APPATH;
 
 //$fw = new Framework\framework();
 //$tg = $fw->Twig("", TRUE);
