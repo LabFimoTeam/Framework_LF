@@ -7,9 +7,6 @@
 
 require_once ('lib/paths.php');
 
-use Librerias as Lib;
-use Configuraciones as Conf;
-
 
 $concentrador = new Librerias\paths();
 
@@ -35,6 +32,7 @@ foreach ($concentrador->get_archivos_ruta(CONFIGPATH) as $k) {
 */
 
 require_once (VENDORPATH."Twig/Autoloader.php");
+
  
 /*********************************************************************************/
 ?>

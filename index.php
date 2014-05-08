@@ -1,12 +1,5 @@
 <?php
 
-use Librerias as Lib;
-use Configuraciones as Config;
-use Framework as Fmw;
-
-print 
-"<title>Hola</title>
-<h1>Hola mundo </h1>";
 
 require_once('./framework/framework.php');
 
@@ -20,12 +13,10 @@ print "<br/><pre>";
 //print_r ($d->leer_archivos('./framework/'));
 print "</pre>";
 
-print "<br/>";
 
-print \APPATH;
-
-//$fw = new Framework\framework();
-//$tg = $fw->Twig("", TRUE);
-//$tg->loadTemplate('index.html');
-
+print STATICPATH;
+$fw = new framework();
+$tg = $fw->Twig("Home", TRUE);
+$tg->loadTemplate('index.html');
+echo $tg->render("index.html",array('titulo' => 'Boostrap', 'STATICPATH' => SERVERURL.STATICPATH));
 ?>
