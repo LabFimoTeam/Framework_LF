@@ -1,6 +1,5 @@
 <?php
 
-namespace Configuraciones;
 
 /*************** Base de datos ***********/
  $db_host = 'localhost';
@@ -15,5 +14,6 @@ namespace Configuraciones;
 require_once('constantes.php');
 
 /**************************/
+
 
 ?>
