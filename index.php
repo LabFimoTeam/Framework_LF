@@ -28,5 +28,13 @@ print "<hr/>".TEMPLATESURL."<br/><hr/>";
 $fw = new framework();
 $tg = $fw->Twig("Home", TRUE);
 $tg->loadTemplate('index.html');
-echo $tg->render("index.html",array('titulo' => 'Boostrap', 'STATICURL' => STATICURL));
+
+$template_val = array(
+'titulo' => 'Boostrap', 
+'STATICURL' => STATICURL,
+'project_name' => 'FrameWork LF',
+'titulo_pagina' => 'FrameWork',
+);
+
+echo $tg->render("index.html",$template_val);
 ?>
