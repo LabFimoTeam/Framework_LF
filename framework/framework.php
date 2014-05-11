@@ -1,10 +1,11 @@
 <?php
 
-require_once (__DIR__ . '/core/config/config.php');
+//require_once (__DIR__ . '/core/config/config.php');
 //Config
-require_once (__DIR__ . '/core/concentradorLib.php');
+//require_once (__DIR__ . '/core/concentradorLib.php');
 //Config
 
+require_once('loader.php');
 /**
  * Objeto Inicializador de los componentes del framework
  *  
@@ -34,7 +35,7 @@ class framework {
 	 * La carpeta cache por defecto esta
 	 */
 	public function Twig($path_templates, $cache_enable) {
-	    \Twig_Autoloader::register();		
+	    \Twig_Autoloader::register();
 		$loader = new \Twig_Loader_Filesystem($path_templates != "" ? TEMPLATESPATH.$path_templates : TEMPLATESPATH);
 		$cache_enable = array();
 		if ($cache_enable) {
