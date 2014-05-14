@@ -1,11 +1,9 @@
-<?php
-
-//require_once (__DIR__ . '/core/config/config.php');
-//Config
-//require_once (__DIR__ . '/core/concentradorLib.php');
-//Config
+<?php if (!defined(FRAMEWORKPATH)) exit('No direct script access allowed'); 
 
 require_once('loader.php');
+
+use arenybakk\ClassLoader;
+
 /**
  * Objeto Inicializador de los componentes del framework
  *  

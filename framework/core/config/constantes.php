@@ -9,7 +9,11 @@
 
 /********* Configuraciones ***************************************************/
 
- 
+/**
+* Archivo de configuracion
+*/
+define('FRAMEWORKPATH', realpath(__DIR__.'/../../../').DIRECTORY_SEPARATOR);
+
 /**
 * Archivo de configuracion
 */
