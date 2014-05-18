@@ -1,8 +1,13 @@
-<?php if (!defined(FRAMEWORKPATH)) exit('No direct script access allowed'); 
+<?php 
 
-require_once('loader.php');
+namespace FrameWork;
+use FrameWork\Loader;
+use FrameWork\Constantes as con;
 
-use arenybakk\ClassLoader;
+require_once('ClassLoader.php');
+require_once (__DIR__.'/core/config/constantes.php');
+
+
 
 /**
  * Objeto Inicializador de los componentes del framework
@@ -10,7 +15,24 @@ use arenybakk\ClassLoader;
 **/
 
 class framework {
-
+	 public function __construct()
+	 {
+	 	$locaciones = array(
+	 	FRAMEWORKPATH,
+	 	CONFIGPATH,
+	 	LIBPATH,
+	 	VENDORPATH
+		);
+		
+		print "<pre>";
+		print_r ($locaciones);
+		print "</pre>";
+		
+	 	$loader = new \FrameWork\Loader\ClassLoader($locaciones);
+		$loader->register();
+		
+		
+	 }
 	/**
 	 *  Metodo Inicializador de Twig (Motor de Templates HTML-PHP)
 	 *

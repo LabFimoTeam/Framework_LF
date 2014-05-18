@@ -3,6 +3,8 @@
 
 require_once('./framework/framework.php');
 
+use FrameWork as fmw;
+
 //$d = new Librerias\paths();
 
 
@@ -25,7 +27,7 @@ print "<hr/>".STATICURL."<br/><hr/>";
 print "<hr/>".TEMPLATESURL."<br/><hr/>";
 */
 
-$fw = new framework();
+$fw = new \FrameWork\framework();
 $tg = $fw->Twig("Home", TRUE);
 $tg->loadTemplate('index.html');
 

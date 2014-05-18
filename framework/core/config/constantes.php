@@ -1,6 +1,6 @@
 <?php
 
-
+namespace FrameWork\Constantes;
 /**
  *  En este archivo se encuentran definidas las rutas absolutas de los archivos.
  *  Puedes agregar mas rutas personalizadas
