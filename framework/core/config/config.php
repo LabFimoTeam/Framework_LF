@@ -1,5 +1,5 @@
 <?php
-namespace FrameWork\Config;
+
 
 /*************** Base de datos ***********/
  $db_host = 'localhost';

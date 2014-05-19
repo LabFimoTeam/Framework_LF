@@ -1,11 +1,7 @@
 <?php 
 
-namespace FrameWork;
-use FrameWork\Loader;
-use FrameWork\Constantes as con;
-
-require_once('ClassLoader.php');
-require_once (__DIR__.'/core/config/constantes.php');
+require_once('librerias.php');
+//require_once (__DIR__.'/core/config/constantes.php');
 
 
 
@@ -17,21 +13,7 @@ require_once (__DIR__.'/core/config/constantes.php');
 class framework {
 	 public function __construct()
 	 {
-	 	$locaciones = array(
-	 	FRAMEWORKPATH,
-	 	CONFIGPATH,
-	 	LIBPATH,
-	 	VENDORPATH
-		);
-		
-		print "<pre>";
-		print_r ($locaciones);
-		print "</pre>";
-		
-	 	$loader = new \FrameWork\Loader\ClassLoader($locaciones);
-		$loader->register();
-		
-		
+	 	
 	 }
 	/**
 	 *  Metodo Inicializador de Twig (Motor de Templates HTML-PHP)

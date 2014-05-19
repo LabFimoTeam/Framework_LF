@@ -1,6 +1,5 @@
 <?php
 
-namespace Librerias;
 
 
 abstract class DBAbstractModel { 

@@ -33,7 +33,6 @@
 
 <?php
 
-namespace arenybakk;
 
 /**
  * A class loader that loads from a series of locations.
