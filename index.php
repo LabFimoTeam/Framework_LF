@@ -24,6 +24,7 @@ print "<hr/>".MODELOSURL."<br/><hr/>";
 print "<hr/>".STATICURL."<br/><hr/>";
 print "<hr/>".TEMPLATESURL."<br/><hr/>";
 */
+//print "<h1>".LIBPATH."</h1><hr/>";
 
 $fw = new framework();
 $tg = $fw->Twig("Home", TRUE);
