@@ -1,18 +1,20 @@
-<?php
+<?php 
 
-//require_once (__DIR__ . '/core/config/config.php');
-//Config
-//require_once (__DIR__ . '/core/concentradorLib.php');
-//Config
+require_once('librerias.php');
+//require_once (__DIR__.'/core/config/constantes.php');
 
-require_once('loader.php');
+
+
 /**
  * Objeto Inicializador de los componentes del framework
  *  
 **/
 
 class framework {
-
+	 public function __construct()
+	 {
+	 	
+	 }
 	/**
 	 *  Metodo Inicializador de Twig (Motor de Templates HTML-PHP)
 	 *

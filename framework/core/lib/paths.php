@@ -1,6 +1,5 @@
 <?php
 
-namespace Librerias;
 /**
  * Clase que obtiene diferentes paths
  */
