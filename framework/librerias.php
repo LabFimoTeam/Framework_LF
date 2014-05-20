@@ -2,33 +2,18 @@
 /**
  * Concentrador de los paths dentro del core
  * @author Erik Daniel Villegas Sanchez
+ * @version 1.0 
  *
+ * Version Previa Sera optimizada en siguiente version
  */
 
 /*************************** Directorios core **********************************/
 require_once (__DIR__.'/core/config/config.php');
 
-$locaciones = array(
-	 	FRAMEWORKPATH,
-	 	CONFIGPATH,
-	 	LIBPATH,
-		);
 
-foreach($locaciones as $location) {
-    
-    /*
-      $fullPath = $location . '/' . $partialPath . '.php';
-      
-      if(file_exists($fullPath)) {
-        if($load) {
-            require($fullPath);
-        }
-        return true;
-      }
-      */
-      //print "<br/><hr/>".$location;
-    }
-
+require_once (LIBPATH.'paths.php');
+require_once (COREBASEPATH.'controler_base.php');
+require_once (COREBASEPATH.'db_base.php');
 
 /*************************** Directorios Vendor **********************************/
 

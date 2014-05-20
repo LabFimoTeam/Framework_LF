@@ -9,9 +9,10 @@
 /********* Configuraciones ***************************************************/
 
 define('FRAMEWORKPATH', realpath(__DIR__.'/../../../').DIRECTORY_SEPARATOR);
-define('CONFIGFILE', realpath(__DIR__.'/config.php').DIRECTORY_SEPARATOR);
 define('CONFIGPATH', realpath(__DIR__).DIRECTORY_SEPARATOR);
+define('CONFIGFILE', realpath(CONFIGPATH.'config.php').DIRECTORY_SEPARATOR);
 define('LIBPATH', realpath(__DIR__.'/../lib').DIRECTORY_SEPARATOR);
+define('COREBASEPATH', realpath(LIBPATH.'/base').DIRECTORY_SEPARATOR);
 
 /*********************************************************************************/
 
