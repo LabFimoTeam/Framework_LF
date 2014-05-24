@@ -12,7 +12,6 @@ require_once (__DIR__.'/core/config/config.php');
 
 
 require_once (LIBPATH.'paths.php');
-require_once (COREBASEPATH.'controler_base.php');
 require_once (COREBASEPATH.'db_base.php');
 
 /*************************** Directorios Vendor **********************************/
