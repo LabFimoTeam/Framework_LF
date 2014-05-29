@@ -52,8 +52,8 @@ Options -Indexes
   ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
 
   # CSS y JavaScript: 1 año. Ten en cuenta que si cambias los ficheros deberías usar una query string o un nombre de archivo diferente para evitar que los visitantes reciban archivos cacheados.
-  ExpiresByType text/css                  "access plus 1 year"
-  ExpiresByType application/javascript    "access plus 1 year"
+  ExpiresByType text/css                  "access plus 1 month"
+  ExpiresByType application/javascript    "access plus 1 month"
 
 </IfModule>
 

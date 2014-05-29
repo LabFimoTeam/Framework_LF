@@ -19,23 +19,23 @@ define('COREBASEPATH', realpath(LIBPATH.'/base').DIRECTORY_SEPARATOR);
 
 /*********************************************Paths Aplicacion  *******************************************/
 
-define('APPATH', REALPATH(__DIR__."/../../../aplicacion").DIRECTORY_SEPARATOR);
-define('CACHEPATH', (APPATH."caches").DIRECTORY_SEPARATOR);
-define('CONTROLADORESPATH', (APPATH."controladores").DIRECTORY_SEPARATOR);
-define('MODELOSPATH', (APPATH."modelos").DIRECTORY_SEPARATOR);
-define('STATICPATH', (APPATH."static").DIRECTORY_SEPARATOR);
-define('TEMPLATESPATH', (APPATH."templates").DIRECTORY_SEPARATOR);
+define('PUBLICPATH', REALPATH(__DIR__."/../../../public").DIRECTORY_SEPARATOR);
+define('CACHEPATH', (PUBLICPATH."caches").DIRECTORY_SEPARATOR);
+define('CONTROLADORESPATH', (PUBLICPATH."controladores").DIRECTORY_SEPARATOR);
+define('MODELOSPATH', (PUBLICPATH."modelos").DIRECTORY_SEPARATOR);
+define('STATICPATH', (PUBLICPATH."static").DIRECTORY_SEPARATOR);
+define('TEMPLATESPATH', (PUBLICPATH."templates").DIRECTORY_SEPARATOR);
 
 /*********************************************  Paths Aplicacion  *******************************************/
 
 /*********************************************URL Aplicacion  *******************************************/
 
-define('APURL', "/framework/aplicacion".DIRECTORY_SEPARATOR);
-define('CACHEURL', (APURL."caches").DIRECTORY_SEPARATOR);
-define('CONTROLADORESURL', (APURL."controladores").DIRECTORY_SEPARATOR);
-define('MODELOSURL', (APURL."modelos").DIRECTORY_SEPARATOR);
-define('STATICURL', (APURL."static").DIRECTORY_SEPARATOR);
-define('TEMPLATESURL', (APURL."templates").DIRECTORY_SEPARATOR);
+define('PUBLICURL', "/framework/public".DIRECTORY_SEPARATOR);
+define('CACHEURL', (PUBLICURL."caches").DIRECTORY_SEPARATOR);
+define('CONTROLADORESURL', (PUBLICURL."controladores").DIRECTORY_SEPARATOR);
+define('MODELOSURL', (PUBLICURL."modelos").DIRECTORY_SEPARATOR);
+define('STATICURL', (PUBLICURL."static").DIRECTORY_SEPARATOR);
+define('TEMPLATESURL', (PUBLICURL."templates").DIRECTORY_SEPARATOR);
 
 /*********************************************  Paths Aplicacion  *******************************************/
 
